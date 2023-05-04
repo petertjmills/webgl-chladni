@@ -11,7 +11,7 @@ const camera = new THREE.OrthographicCamera(
 	1000
 );
 
-const renderer = new THREE.WebGLRenderer();
+const renderer = new THREE.WebGLRenderer({premultipliedAlpha:false});
 renderer.setSize(window.innerHeight, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
